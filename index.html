@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Calculator With JS">
+    <meta name="author" content="Mohammad Reza Ebrahimi">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main-style.css">
+    <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+</head>
+<body class="dark-mode-style">
+    <div class="container">
+        <p id="toggle-menu"><span class="iconify" data-icon="feather:menu"></span></p>
+        <div class="menu-box">
+            <nav class="menu">
+                <div class="menu-header">
+                    <span>Calculator Menu</span>
+                </div>
+                <div class="menu-list">
+                    <span class="menu-title">Tools</span>
+                    <ul>
+                        <li><span class="iconify" data-icon="typcn:tick"></span><a href="#">Standard Calc</a></li>
+                        <!--<li><span class="iconify" data-icon="typcn:tick"></span><a href="#">Fraction Calc</a></li>-->
+                        <!--<li><span class="iconify" data-icon="typcn:tick"></span><a href="#">Temperature Calc</a></li>-->
+                        <!--<li><span class="iconify" data-icon="typcn:tick"></span><a href="#">Currency Calc</a></li>-->
+                    </ul>
+                </div>
+                <div class="setting">
+                    <span class="menu-title">Setting</span>
+                    <label for="dark-mode" class="dm-div">
+                        <span>Dark Mode</span>
+                        <input type="checkbox" id="dark-mode" name="dark-mode" checked>
+                    </label>
+                </div>
+                <div class="about-div">
+                    <a href="https://github.com/mre-dev/calculator" id="github-btn">Check on Github</a>
+                </div>
+            </nav>
+        </div>
+        <div class="calc-box">
+            <div class="header">
+                <h1>Calculator</h1>
+            </div>
+            <div class="calc-design">
+                <div id="standard-calc">
+                    <div class="show-result">
+                        <p class="end-res"></p>
+                        <p class="now-res">0</p>
+                    </div>
+                    <table>
+                        <tr>
+                            <td><button>e</button></td>
+                            <td><button>µ</button></td>
+                            <td><button>sin</button></td>
+                            <td><button>deg</button></td>
+                        </tr>
+                        <tr>
+                            <td><button id="delete">Ac</button></td>
+                            <td><button id="backspace"><span class="iconify" data-icon="akar-icons:backspace"></span></button></td>
+                            <td><button id="op-division" class="calc-op-button-dark">/</button></td>
+                            <td><button id="op-multiplication" class="calc-op-button-dark">*</button></td>
+                        </tr>
+                        <tr>
+                            <td><button id="num-7">7</button></td>
+                            <td><button id="num-8">8</button></td>
+                            <td><button id="num-9">9</button></td>
+                            <td><button id="op-minus" class="calc-op-button-dark">-</button></td>
+                        </tr>
+                        <tr>
+                            <td><button id="num-4">4</button></td>
+                            <td><button id="num-5">5</button></td>
+                            <td><button id="num-6">6</button></td>
+                            <td><button id="op-plus" class="calc-op-button-dark">+</button></td>
+                        </tr>
+                        <tr>
+                            <td><button id="num-1">1</button></td>
+                            <td><button id="num-2">2</button></td>
+                            <td><button id="num-3">3</button></td>
+                            <td rowspan="2"><button id="op-equal" class="calc-op-button-dark">=</button></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><button id="num-0">0</button></td>
+                            <td><button id="dot">.</button></td>
+                            
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

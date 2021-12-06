@@ -1,0 +1,31 @@
+.dark-mode-style {
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(90,92,106,1) 0%, rgba(32,45,58,1) 81.3% );
+}
+
+.menu-light-mode-background {
+    background-color: #EEEEEE !important;
+}
+
+.menu-light-mode-textcolor {
+    color: black !important;
+}
+
+.menu-light-mode-border-color {
+    border-color: black !important;
+}
+
+.menu a.menu-light-mode-textcolor:hover {
+    color: #00ADB5 !important;
+}
+
+.calc-op-button-dark {
+    background: #005DB2 !important;
+}
+
+.calc-op-button-light {
+    background: linear-gradient(203.57deg, #0086ff -8.99%, rgba(173, 216, 255, 0.28) 111.42%) !important;
+}
+
+.calc-num-light {
+    background: linear-gradient(129.7deg, rgba(255, 255, 255, 0.6) -9.69%, rgba(255, 255, 255, 0.4) 114.23%) !important;
+}
