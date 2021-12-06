@@ -46,6 +46,7 @@
 
 .menu .menu-list ul li {
     padding: 0.5rem 0rem;
+    list-style-type: none;
 }
 
 .menu .menu-list ul li svg {
